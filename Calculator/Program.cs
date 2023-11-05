@@ -13,7 +13,7 @@ namespace Calculator
             int number1 = 5;
             int number2 = 2;
 
-            if (Calculator.Multiply(number1, number2) == 10)
+            if (Methods.Multiply(number1, number2) == 10)
             {
                 Console.WriteLine($"Multiplication of {number1} and {number2} works as expected!");
             }
