@@ -11,6 +11,7 @@ namespace Uzduotis17UnitTests
     {
         private DayOfWeek expectedResult;
 
+        //Testas “žalias” jeigu 995 dalijasi iš 3 (be liekanos)
         [Test]
         public void TestNumber()
         {
@@ -32,6 +33,7 @@ namespace Uzduotis17UnitTests
             //Assert
             Assert.IsTrue(expectedResult);
         }
+        //Testas “žalias” jeigu šiandien trečiadienis 
         [Test]
         public void IsWednesday()
         {
@@ -43,7 +45,7 @@ namespace Uzduotis17UnitTests
             //Assert
             Assert.AreEqual(expectedResult, day);
         }
-
+        //Testas “žalias” jeigu dabar yra 13h 
         [Test]
         public void Time()
         {
@@ -54,7 +56,7 @@ namespace Uzduotis17UnitTests
             //Assert
             Assert.AreEqual(expectedResult, now);
         }
-
+        //Bonus: Testas “žalias” jei nuo 1 iki 10 (imtinai) yra 4 lyginiai skaičiai
         [Test]
         public void FourEvenNumbers()
         {
