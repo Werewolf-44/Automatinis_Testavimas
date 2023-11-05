@@ -25,5 +25,12 @@ namespace CalculatorUnitTests
             Assert.AreEqual(expectedResult, actualResult);
             Assert.IsTrue(actualResult == expectedResult);
         }
+
+        [TestCase(5, 2, 2.5)]
+        public void TestDivision(int number1, int number2, double expectedResult)
+        {
+            double actualResult = Methods.Divide(number1, number2);
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
